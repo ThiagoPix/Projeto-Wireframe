@@ -1,0 +1,406 @@
+@charset "UTF-8";
+
+:root{
+  --white: #fff;
+  --brand-colors-pink: #F67ACB;
+  --grey-colors-50: #e6ebf2;
+  --grey-colors-100: #050110;
+  --grey-colors-200: #1C1D1F;
+  --grey-colors-300: #393C40;
+  --grey-colors-400: #5C6066;
+  --grey-colors-800: #F7F8FA;
+  --white-colors-text: rgba(255, 255, 255, 0.7);
+  --brand-colors-grey: #E6EBF2;
+  --background-grey-dark: #D0D7E0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  width: 100%;
+  background-color: var(--white);
+  margin: 0px 0px 0px 0px;
+}
+
+/*---------------------------------------efeito de crescer--------------------------------------------*/
+
+.bt1:hover{
+  transform: scale(1.05);
+  transition: .3s;
+  }
+.bt1{
+    display: inline-block;
+    font-size: 1.3em;
+    background-color: var(--brand-colors-pink);
+    padding: 10px 30px;
+    transition: .3s;
+    font-weight: bolder;
+    color: var(--grey-colors-100);
+  }
+.bt1 > a{
+  color: var(--grey-colors-100);
+  }
+
+/*---------------------------------------efeito de crescer--------------------------------------------*/
+/*---------------------------------------cabeçalho do site--------------------------------------------*/
+
+header{
+  width: 100%;
+  background-color: var(--grey-colors-800);
+  padding: 30px;
+  margin-bottom: 50px;
+}
+header > div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header > div > nav{
+  min-width: 350px;
+  max-width: 1600px;
+  margin: auto;
+  align-items: center;
+}
+header > div > nav{
+  display: flex;
+}
+header > div > nav > ul{  
+  columns: 5;
+}
+#navlogo{
+  margin: 0px 200px 0px 0px;  
+}
+.menuitem > a{
+  text-decoration: none;
+  color: var(--grey-colors-400);
+}
+.menuitem{
+  font-size: 1.18em;
+  text-align: center;
+  padding: 10px 15px;
+  background-color: var(--grey-colors-50);
+  margin: 0px;
+  width: 110;
+}
+.menuitem:hover{
+  color: var(--white);
+  background-color: rgb(172, 180, 191);
+}
+
+/*----------------------------------cabeçalho do site---------------------------------------*/
+/*---------------------------------------Bloco 1--------------------------------------------*/
+
+div{
+  display: block;
+}
+#container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  width: 1440px;
+  height: 640px;
+  margin: auto;
+  padding: 15px; 
+  transition: 1s
+}
+#container > article{
+  width: 100%;
+  min-width: 692px;
+  min-height: 362px;
+  max-width: 692px;
+  max-height: 462px;
+}
+#container > article > h1{
+  width: 100%;
+  font-weight: bolder;
+  font-size: 3.4rem;
+  margin-bottom: 25px;
+}
+#container > article > p{
+  width: 100%;
+  font-size: 1.3rem;
+  color: var(--grey-colors-300);
+  line-height: 1.5;
+  font-weight: 100;
+  margin-bottom: 70px;
+}
+#img1{
+  width: 100%;
+  min-width: 538px;
+  min-height: 596px;
+  background-color: var(--grey-colors-800);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 150px;
+}
+article#texto > a.bt1{
+  padding: 20px 35px;
+}
+/*---------------------------------------Bloco 1--------------------------------------------*/
+/*---------------------------------------Bloco 2--------------------------------------------*/
+#bloco2{
+  width: 100%;
+  display: block;
+  position: absolute;
+  width: 2070px;
+  height: 1124px;
+  padding: 104px 0px 102px 0px;
+  background-color: var(--grey-colors-100);
+  margin-top: 80px;
+}
+#bloco2 > h2{
+  color: var(--white);
+  text-align: center;
+  font-size: 2.1rem;
+}
+#bloco2 > p{
+  color: var(--white-colors-text);
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+#cards{
+  width: 100%;
+  width: 1216px;
+  height: 682px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+  transition: 1.5s;
+}
+#efeitob2{
+  width: 100%;
+  max-width: 384px;
+  height: 430px;
+  background-color: rgba(26, 31, 30, 0.513);
+  display: inline-block;
+  align-items: center;
+  margin-top: 100px;
+  padding: 40px;
+}
+#efeitob2:hover{
+  transform: scale(1.05);
+  transition: .3s;
+  cursor: pointer;
+}
+#efeitob3{
+  width: 100%;
+  max-width: 384px;
+  height: 430px;
+  background-color: var(--white);
+  display: inline-block;
+  align-items: center;
+  margin-top: 100px;
+  padding: 40px;
+}
+#efeitob3:hover{
+  transform: scale(1.05);
+  transition: .3s;
+  cursor: pointer;
+}
+.h3{
+  color: var(--white);
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.4rem;
+}
+.p1{
+  color: var(--white-colors-text);
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+.h4{
+  color: var(--grey-colors-100);
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.4rem;
+}
+.p2{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: var(--grey-colors-300);
+}
+.img2{
+  text-align: center;
+  margin-top: 50px;
+  transform: scale(1.1);
+}
+
+/*---------------------------------------Bloco 2--------------------------------------------*/
+/*---------------------------------------Bloco 2.2------------------------------------------*/
+#bg{
+  background-color: var(--grey-colors-100);
+  width: 2070px;
+  height: 650px;
+}
+#bloco22{
+  width: 1216px;
+  height: 288px;
+  background-color: var(--grey-colors-100);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#bloco22 > div > h2{
+  color: var(--white);
+  font-size: 2.1rem;
+}
+#bloco22 > div > p{
+  color: var(--white-colors-text);
+  font-size: 1.2rem;
+  background-color: var(--grey-colors-100);
+}
+#tr{
+  display: inline-block;
+}
+#allimg{
+    width: 1216px;
+    height: 258px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.crescer:hover{
+  cursor: pointer;
+  transform: scale(1.15);
+  transition: 0.3s;
+}
+/*---------------------------------------Bloco 2.2------------------------------------------*/
+/*---------------------------------------Bloco 3--------------------------------------------*/
+#bloco3{
+  width: 100%;
+  width: 2070px;
+  height: 494px;
+  padding: 152px 0px 152px 0px;
+  background-color: var(--grey-colors-200);
+  transition: 1.5s;
+}
+#bloco3 > h2{
+ text-align: center;
+ color: var(--white);
+ font-size: 2rem;
+}
+#tt2{
+  text-align: center;
+  color: var(--white-colors-text);
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+.bt4{
+  text-align: center;
+  margin-left: 858px;
+  margin-top: 60px;
+}
+.bt4:hover{
+  transform: scale(1.05);
+  transition: .3s;
+  }
+.bt4{
+    display: inline-block;
+    font-size: 1.3em;
+    background-color: var(--brand-colors-pink);
+    padding: 10px 30px;
+    transition: .3s;
+    font-weight: bolder;
+    color: var(--grey-colors-100);
+  }
+.bt4 > a{
+  color: var(--grey-colors-100);
+  }
+/*---------------------------------------Bloco 3--------------------------------------------*/
+/*----------------------------------------footer--------------------------------------------*/
+footer{
+  background-color: var(--grey-colors-100);
+  width: 2070px;
+  height: 494px;
+  display: block;
+}
+#f1{
+  width: 1216px;
+  height: 407px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 88px 0px 40px 0px;
+}
+#logo > p{
+  color: var(--white-colors-text);
+  display: flex;
+  margin-top: 30px; 
+  text-align: justify;
+}
+#logo > img{
+  transform: scale(1, 1);
+  margin-right: 70px;
+}
+#logo{
+  display: inline-flex;
+  min-width: 281px;
+  width: 154px;
+  padding: 5px;
+  flex-direction: column;
+}
+#listapag{
+  display: flex;
+  color: var(--white-colors-text);
+  line-height: 50px;
+  font-size: 1.05rem;
+}
+#solu{
+  display: flex;
+  color: var(--white-colors-text);
+  line-height: 50px;
+  font-size: 1.05rem;
+}
+#redes{
+  display: flex;
+  color: var(--white-colors-text);
+  line-height: 50px;
+  font-size: 1.05rem;
+}
+.destaque{
+  color: var(--white);
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+.destaquefooter:hover{
+  color: var(--white);
+  cursor: pointer;
+  transition: .5s;
+}
+/*----------------------------------------footer--------------------------------------------*/
+/*----------------------------------------footer2-------------------------------------------*/
+#f2{
+  display: flex;
+  justify-content: space-between;
+  width: 1216px;
+  height: 80px;
+  align-items: center;
+  margin: auto;
+}
+#f2 > p{
+  color: var(--white-colors-text);
+  font-size: 1.2rem;
+}
+#f2 > p > strong{
+  color: var(--white);
+}
+/*----------------------------------------footer2-------------------------------------------*/
